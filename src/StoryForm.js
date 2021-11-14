@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { checkFormIncomplete } from "./madlibs";
 
+import "./StoryForm.css";
+
 /** Form for a user to input words for the associated prompts 
  * 
  *  Props:
@@ -47,7 +49,7 @@ function StoryForm({ story, handleStorySubmit }) {
             <div className="form-group">
                 {story.inputs.map(i => (
                     <div className="form-group row" key={i.id}>
-                        <label htmlFor={i.id} className="col-form-label col-2 text-left">
+                        <label htmlFor={i.id} className="col-form-label col-2 text-left StoryForm-label">
                             {i.input}:</label>
                         <div className="col-10 mb-2">
                             <input

@@ -2,7 +2,7 @@
 function FormInput({ id, input, handleChange, value }) {
     return (
         <div className="form-group row">
-            <label htmlFor={id}>{input}:</label>
+            <label htmlFor={id} className="Form-label">{input}:</label>
             <input
                 id={id}
                 name="response"

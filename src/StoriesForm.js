@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import "./StoriesForm.css";
+
 const initialFormData = {
     value: "",
 }
@@ -34,17 +36,18 @@ function StoriesForm({ stories, handleStoryChoice }) {
 
     return (
 
-        <form className="StoriesForm" onSubmit={handleSubmit}>
+        <form className="StoriesForm mt-5" onSubmit={handleSubmit}>
             <div className="form-group d-flex justify-content-between">
-                <div className="w-75 d-flex justify-content-between">
+                <div className=" d-flex w-50 justify-content-between">
                     <label htmlFor="StoriesForm-choices"
-                        className="d-inline-flex">Choose a Story:&nbsp;&nbsp;
+                        className="d-inline-flex StoriesForm-label col-6">
+                            Choose a Story:&nbsp;&nbsp;
                     </label>
                     <select id="StoriesForm-choices"
                         name="story"
                         value={formData.value}
                         onChange={handleChange}
-                        className="form-control form-control-sm d-inline-flex"   
+                        className="form-control form-control-lg col-12"   
                     >
                         <option key={0} value="" defaultValue disabled>Choose a Story!</option>
                         {stories.map(story => (

@@ -1,3 +1,5 @@
+import "./Story.css";
+
 /** Shows a story with the text updated with user inputs
  * 
  *  Props:
@@ -12,7 +14,7 @@ function Story({ text, handleStoryRestart, handleStoryChoiceUpdate }) {
     
     return (
         <div className="Story">
-            <div className="Story-completed-text mb-3">{text}</div>
+            <div className="Story-completed-text my-5">{text}</div>
             <button 
                 type="button"
                 className="btn-primary btn btn-sm StoryForm-restartBtn"
