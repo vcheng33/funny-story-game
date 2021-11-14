@@ -36,7 +36,7 @@ function StoriesForm({ stories, handleStoryChoice }) {
 
     return (
 
-        <form className="StoriesForm mt-5" onSubmit={handleSubmit}>
+        <form className="StoriesForm" onSubmit={handleSubmit}>
             <div className="form-group d-flex justify-content-between">
                 <div className=" d-flex w-50 justify-content-between">
                     <label htmlFor="StoriesForm-choices"

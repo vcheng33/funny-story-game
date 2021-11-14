@@ -65,7 +65,7 @@ function MadlibsApp({ stories=STORIES }) {
     }
 
     return (
-        <div>
+        <div className="container w-75">
         {!story.text && 
             <StoriesForm 
                 handleStoryChoice={handleStoryChoice} 
